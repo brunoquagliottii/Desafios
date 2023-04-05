@@ -26,7 +26,7 @@ class TestAPI(unittest.TestCase):
         self.assertEqual(response.text, 'apagado')
 
     def test_buscar_nome_filme(self):
-        response = requests.get(f'{self.base_url}/teste?name=taxi%20driver')
+        response = requests.get(f'{self.base_url}/filme?name=taxi%20driver')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(len(response.json()), 1)
         self.assertEqual(response.json()[0]['nome'], 'Taxi Driver')

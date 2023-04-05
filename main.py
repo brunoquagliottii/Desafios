@@ -3,7 +3,7 @@ import database
 
 app = Flask(__name__)
 
-@app.route('/teste')
+@app.route('/filme')
 def hello_world():
     name = request.args.get('name')
     print(database.buscar_nome_filme(name))
