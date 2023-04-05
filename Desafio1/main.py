@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import database
+from Desafio1 import database
 
 app = Flask(__name__)
 

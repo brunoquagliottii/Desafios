@@ -23,7 +23,7 @@ def criar_banco():
             )
         """)
 
-        df = pd.read_csv('movie.csv', delimiter=',', quotechar='"')
+        df = pd.read_csv('Desafio1/movie.csv', delimiter=',', quotechar='"')
         batch_size = 100
         num_batches = len(df) // batch_size + (1 if len(df) % batch_size > 0 else 0)
 
